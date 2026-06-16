@@ -11,15 +11,22 @@
                         url('https://i.imgur.com/YgBaa1D.jpg');
       background-size: cover;
       background-position: center;
+      min-height: 100vh;
     }
-    .foto { transition: all 0.4s ease; }
-    .foto:hover { transform: scale(1.03); }
+    
+    /* Mejora para móviles */
+    @media (max-width: 768px) {
+      .hero {
+        background-attachment: scroll; /* Importante para móviles */
+        min-height: 90vh;
+      }
+    }
   </style>
 </head>
 <body class="bg-gray-50">
 
   <!-- Hero Principal -->
-  <header class="hero h-screen flex items-center justify-center text-white text-center px-4">
+  <header class="hero flex items-center justify-center text-white text-center px-4">
     <div class="max-w-4xl mx-auto">
       <h1 class="text-4xl md:text-6xl font-bold mb-4">DEPARTAMENTO EN VENTA</h1>
       <h2 class="text-2xl md:text-4xl mb-6">Puerto Vallarta, Jalisco</h2>
@@ -78,16 +85,14 @@
     <!-- Galería -->
     <h3 class="text-3xl font-bold text-center mb-8 text-blue-900">Galería</h3>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-
-      <img src="https://i.imgur.com/zesKvIL.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Entrada">
-      <img src="https://i.imgur.com/MDNWETs.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Jardín">
-      <img src="https://i.imgur.com/C4Qll1H.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Alberca">
-      <img src="https://i.imgur.com/F1g64TM.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Piscina">
-      <img src="https://i.imgur.com/dJNZ105.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Sala">
-      <img src="https://i.imgur.com/UDpUDOr.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Comedor">
-      <img src="https://i.imgur.com/kcsuUeM.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Cocina">
-      <img src="https://i.imgur.com/1TSQG8C.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Interior">
-
+      <img src="https://i.imgur.com/zesKvIL.jpg" class="rounded-3xl shadow-xl w-full" alt="Entrada">
+      <img src="https://i.imgur.com/MDNWETs.jpg" class="rounded-3xl shadow-xl w-full" alt="Jardín">
+      <img src="https://i.imgur.com/C4Qll1H.jpg" class="rounded-3xl shadow-xl w-full" alt="Alberca">
+      <img src="https://i.imgur.com/F1g64TM.jpg" class="rounded-3xl shadow-xl w-full" alt="Piscina">
+      <img src="https://i.imgur.com/dJNZ105.jpg" class="rounded-3xl shadow-xl w-full" alt="Sala">
+      <img src="https://i.imgur.com/UDpUDOr.jpg" class="rounded-3xl shadow-xl w-full" alt="Comedor">
+      <img src="https://i.imgur.com/kcsuUeM.jpg" class="rounded-3xl shadow-xl w-full" alt="Cocina">
+      <img src="https://i.imgur.com/1TSQG8C.jpg" class="rounded-3xl shadow-xl w-full" alt="Interior">
     </div>
 
     <div class="text-center mt-12">
