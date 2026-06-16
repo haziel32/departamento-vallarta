@@ -7,39 +7,38 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .hero {
-      background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                         url('https://i.imgur.com/YgBaa1D.jpg');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
     }
     .foto { transition: all 0.4s ease; }
-    .foto:hover { transform: scale(1.05); }
+    .foto:hover { transform: scale(1.03); }
   </style>
 </head>
 <body class="bg-gray-50">
 
   <!-- Hero Principal -->
-  <header class="hero h-screen flex items-center justify-center text-white text-center">
-    <div class="max-w-5xl mx-auto px-6">
-      <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-xl">DEPARTAMENTO EN VENTA</h1>
-      <h2 class="text-3xl md:text-5xl mb-6 drop-shadow-xl">Puerto Vallarta, Jalisco</h2>
-      <p class="text-6xl font-bold text-yellow-300 mb-10 drop-shadow-2xl">$4,600,520 MXN</p>
+  <header class="hero h-screen flex items-center justify-center text-white text-center px-4">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">DEPARTAMENTO EN VENTA</h1>
+      <h2 class="text-2xl md:text-4xl mb-6">Puerto Vallarta, Jalisco</h2>
+      <p class="text-5xl md:text-6xl font-bold text-yellow-300 mb-8">$4,600,520 MXN</p>
       
       <a href="https://wa.me/523311854720?text=Hola,%20estoy%20interesado%20en%20el%20departamento%20en%20Puerto%20Vallarta" 
-         class="bg-green-600 hover:bg-green-700 text-white text-2xl font-semibold px-12 py-6 rounded-full inline-block shadow-2xl">
+         class="bg-green-600 hover:bg-green-700 text-white text-xl md:text-2xl font-semibold px-8 md:px-12 py-5 md:py-6 rounded-full inline-block shadow-2xl">
         📲 Contactar por WhatsApp
       </a>
     </div>
   </header>
 
-  <div class="max-w-6xl mx-auto px-6 py-16">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 py-12">
 
     <!-- Información -->
-    <div class="grid md:grid-cols-3 gap-8 mb-20">
-      <div class="bg-white p-8 rounded-3xl shadow-xl">
-        <h3 class="text-2xl font-bold mb-6 text-blue-900">Detalles</h3>
-        <ul class="space-y-4 text-lg">
+    <div class="grid md:grid-cols-3 gap-6 md:gap-8 mb-16">
+      <div class="bg-white p-6 md:p-8 rounded-3xl shadow-xl">
+        <h3 class="text-xl md:text-2xl font-bold mb-6 text-blue-900">Detalles</h3>
+        <ul class="space-y-4 text-base md:text-lg">
           <li><strong>Precio:</strong> $4,600,520 MXN</li>
           <li><strong>Superficie:</strong> 92.14 m²</li>
           <li><strong>Habitaciones:</strong> 2</li>
@@ -48,57 +47,53 @@
         </ul>
       </div>
 
-      <div class="bg-white p-8 rounded-3xl shadow-xl">
-        <h3 class="text-2xl font-bold mb-6 text-blue-900">Amenidades</h3>
-        <ul class="space-y-3 text-lg">
+      <div class="bg-white p-6 md:p-8 rounded-3xl shadow-xl">
+        <h3 class="text-xl md:text-2xl font-bold mb-6 text-blue-900">Amenidades</h3>
+        <ul class="space-y-3 text-base md:text-lg">
           <li>✓ Alberca</li>
           <li>✓ Áreas comunes</li>
           <li>✓ Totalmente amueblado</li>
           <li>✓ Cocina integral</li>
-          <li>✓ Jardines y palmeras</li>
+          <li>✓ Jardines</li>
           <li>✓ Balcón</li>
         </ul>
       </div>
 
-      <div class="bg-white p-8 rounded-3xl shadow-xl">
-        <h3 class="text-2xl font-bold mb-6 text-blue-900">Contacto</h3>
+      <div class="bg-white p-6 md:p-8 rounded-3xl shadow-xl">
+        <h3 class="text-xl md:text-2xl font-bold mb-6 text-blue-900">Contacto</h3>
         <p class="text-2xl font-semibold">331 185 4720</p>
-        <p class="text-gray-600 mt-2">Respondo por WhatsApp</p>
+        <p class="text-gray-600">Respondo por WhatsApp</p>
       </div>
     </div>
 
-    <!-- Botón de Ubicación -->
-    <div class="text-center mb-16">
-      <a href="https://www.google.com/maps/place/Condominios+Marbella/@20.6416805,-105.2345612,17z/data=!3m1!4b1!4m9!3m8!1s0x8421457688fdc387:0x9332aaad815d180b!5m2!4m1!1i2!8m2!3d20.6416805!4d-105.2345612!16s%2Fg%2F11b7f3f8y4?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" 
+    <!-- Botón Maps -->
+    <div class="text-center mb-12">
+      <a href="https://www.google.com/maps/place/Condominios+Marbella/@20.6416805,-105.2345612,17z" 
          target="_blank"
-         class="bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold px-10 py-5 rounded-full inline-block shadow-xl">
-        📍 Ver Ubicación en Google Maps
+         class="bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold px-8 py-4 rounded-full inline-block">
+        📍 Ver en Google Maps
       </a>
     </div>
 
     <!-- Galería -->
-    <h3 class="text-4xl font-bold text-center mb-10 text-blue-900">Galería del Departamento</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <h3 class="text-3xl font-bold text-center mb-8 text-blue-900">Galería</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
 
-      <img src="https://i.imgur.com/zesKvIL.jpg" class="foto rounded-3xl shadow-2xl" alt="Entrada">
-      <img src="https://i.imgur.com/MDNWETs.jpg" class="foto rounded-3xl shadow-2xl" alt="Jardín">
-      <img src="https://i.imgur.com/C4Qll1H.jpg" class="foto rounded-3xl shadow-2xl" alt="Alberca">
-      <img src="https://i.imgur.com/F1g64TM.jpg" class="foto rounded-3xl shadow-2xl" alt="Piscina">
-      <img src="https://i.imgur.com/dJNZ105.jpg" class="foto rounded-3xl shadow-2xl" alt="Sala">
-      <img src="https://i.imgur.com/UDpUDOr.jpg" class="foto rounded-3xl shadow-2xl" alt="Sala y comedor">
-      <img src="https://i.imgur.com/kcsuUeM.jpg" class="foto rounded-3xl shadow-2xl" alt="Comedor">
-      <img src="https://i.imgur.com/bOpkpLL.jpg" class="foto rounded-3xl shadow-2xl" alt="Cocina">
-      <img src="https://i.imgur.com/1TSQG8C.jpg" class="foto rounded-3xl shadow-2xl" alt="Interior">
-      <img src="https://i.imgur.com/XnuV8IH.jpg" class="foto rounded-3xl shadow-2xl" alt="Escaleras">
-      <img src="https://i.imgur.com/EHMR9T9.jpg" class="foto rounded-3xl shadow-2xl" alt="Vista general">
-      <img src="https://i.imgur.com/gtxbjCd.jpg" class="foto rounded-3xl shadow-2xl" alt="Jardines">
+      <img src="https://i.imgur.com/zesKvIL.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Entrada">
+      <img src="https://i.imgur.com/MDNWETs.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Jardín">
+      <img src="https://i.imgur.com/C4Qll1H.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Alberca">
+      <img src="https://i.imgur.com/F1g64TM.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Piscina">
+      <img src="https://i.imgur.com/dJNZ105.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Sala">
+      <img src="https://i.imgur.com/UDpUDOr.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Comedor">
+      <img src="https://i.imgur.com/kcsuUeM.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Cocina">
+      <img src="https://i.imgur.com/1TSQG8C.jpg" class="foto rounded-3xl shadow-xl w-full" alt="Interior">
 
     </div>
 
-    <div class="text-center mt-16">
-      <a href="https://wa.me/523311854720?text=Hola,%20quiero%20más%20información%20del%20departamento%20en%20Puerto%20Vallarta" 
-         class="bg-green-600 hover:bg-green-700 text-white text-2xl font-semibold px-12 py-6 rounded-full inline-block shadow-2xl">
-        📲 Contactar por WhatsApp - 331 185 4720
+    <div class="text-center mt-12">
+      <a href="https://wa.me/523311854720?text=Hola,%20quiero%20más%20información%20del%20departamento" 
+         class="bg-green-600 hover:bg-green-700 text-white text-xl font-semibold px-10 py-5 rounded-full inline-block shadow-xl">
+        📲 Contactar por WhatsApp
       </a>
     </div>
 
